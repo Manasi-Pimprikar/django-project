@@ -1,0 +1,14 @@
+<!doctype html>
+{# yonetim/templates/list.html #}
+{% load render_table from django_tables2 %}
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'ticket/static/css/screen.css' %}" />
+        <title>car</title>
+    </head>
+    <body>
+        {% render_table data %}
+    </body>
+</html>
